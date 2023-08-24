@@ -1,133 +1,116 @@
-
-body, html {
-    margin: 0;
-    padding: 0;
+body,
+html {
+  margin: 0;
+  padding: 0;
 }
 
-
 body {
-    display: flex;
-    
+  display: flex;
 }
 /* all the container */
 .flex-container {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: space-between;
-    
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  
 }
 
 .image {
-    width: 35vw; 
-    height: 105vh; 
-    object-fit: cover;
-
+  width: 35vw;
+  height: 105vh;
+  object-fit: cover;
 }
 .logo {
-    position: absolute; 
-    background-color: rgba(0, 0, 0, 0.5);
-    top: 50%; 
-    left: 17.5%; 
-    transform: translate(-50%, -50%); 
-    z-index: 2; 
-    
-    text-align: center;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 50%;
+  left: 17.5%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+
+  text-align: center;
 }
 .colum2 {
-    background-color: rgba(0, 0, 0, 0.1);
-    padding: 20px; 
-    width: 70%;
-    height: 100%;
-    text-align: left; 
-    display: flex;
-    flex-direction: column;
-
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 70%;
+  height: 100%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
 }
-
 
 .element1 {
-    flex: auto;
-    font-size: 25px;
-    text-align: left;
-    
-    padding-left: 30px;
-    padding-top: 40px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-   
+  flex: auto;
+  font-size: 25px;
+  text-align: left;
+
+  padding-left: 30px;
+  padding-top: 40px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
+.element2 {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  width: 100%;
+  padding: 30px;
 
-.element2{
-    display: flex;
-   flex-direction: column;
-    font-size: 15px;
-    text-align: left;
-    
-    padding-left: 30px;
-    padding-top: 40px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  
- 
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 .forms {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 18px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    background-color: white;
-    align-items: flex-start; /* Align columns to the top of the container */
-    
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: white;
+  align-items: flex-start; 
 }
 
 #formscolumn1,
 #formscolumn2 {
-    
-    display: flex;
-    flex-direction: column; /* Reverse the order of elements within each column */
-    flex-wrap: wrap;
-    width: 50%;
-    box-sizing: border-box;
-    align-items: center; /* Vertically center form elements within each column */
-    background-color: white;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 50%;
+  box-sizing: border-box;
+  align-items: center; 
+  background-color: white;
 }
-
 
 .forms div {
-    width: 100%;
-    margin-bottom: 20px;
-    background-color: white;
-
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: white;
 }
 
-.element3{
-    display: flex;
-   flex-direction: column;
-    font-size: 15px;
-    text-align: left;
-    
-    padding-left: 30px;
-    padding-top: 40px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  
+.element3 {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  text-align: left;
+
+  padding-left: 30px;
+  padding-top: 40px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 #createacc {
   width: 200px;
   height: 60px;
   font-size: 20px;
-  background-color: #596D48;
+  background-color: #596d48;
   color: white;
   border-radius: 10px;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   translate: 20%;
 }
 
 #log-in-footer {
-    font-size: 15px;
-    padding-left: 15px;
+  font-size: 15px;
+  padding-left: 15px;
 }
-
-
