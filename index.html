@@ -10,11 +10,10 @@
     <div class="flex-container">
       <div class="colum1">
         <img src="./assets/logo.png" alt="logo" class="logo" />
-
         <img src="./assets/folhas.jpg" alt="background-image" class="image" />
       </div>
       <!-- meter a cor de fundo na totalidade e depois alterar o do meio -->
-      <div class="colum2"> 
+      <div class="colum2">
         <div class="top-text">
           <h1 class="element1">
             This is not a real online service! You know you need something like
@@ -23,15 +22,82 @@
             You know you want to.
           </h1>
         </div>
-        <!-- formulários -->
+        <!-- forms-->
         <div class="element2">
           <h1>Let's do this</h1>
-          <form action="#"></form>
+          <form class="forms">
+            <div id="formscolumn1">
+              <!-- form elements for the first column -->
+              <div>
+                <label for="first_name">First Name: <p></p></label>
+                <input type="text" name="first_name" id="first_name" />
+              </div>
+
+              <div>
+                <label for="last_name">Last Name: <p></p></label>
+                <input type="text" name="last_name" id="last_name" />
+              </div>
+
+              <div>
+                <label for="password">Password: <p></p></label>
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  oninput="checkPasswordMatch()"
+                />
+              </div>
+            </div>
+
+            <div id="formscolumn2">
+              <!-- form elements for the second column -->
+              <div>
+                <label for="phone">Phone Number: <p></p></label>
+                <input type="number" name="phone" id="phone" />
+              </div>
+
+              <div>
+                <label for="email">Email: <p></p></label>
+                <input type="email" name="email" id="email" />
+              </div>
+
+              <div>
+                <label for="rpassword">Repeat Password: <p></p></label>
+                <input
+                  type="password"
+                  name="rpassword"
+                  id="rpassword"
+                  oninput="checkPasswordMatch()"
+                />
+                <p id="message"></p>
+              </div>
+            </div>
+          </form>
         </div>
         <div class="element3">
-
-        </div>
+            
+            <button id="createacc">Create Account</button>
+            <h1 id="log-in-footer">Already have and Account? <span style="color: #596D48;">Log in</span></h1>
+          </div>
       </div>
+      
     </div>
+
+
+    <script>
+      function checkPasswordMatch() {
+        var password = document.getElementById("password").value;
+        var rpassword = document.getElementById("rpassword").value;
+        var message = document.getElementById("message");
+
+        if (password === rpassword) {
+          message.style.color = "green";
+          message.innerHTML = "Passwords match!";
+        } else {
+          message.style.color = "red";
+          message.innerHTML = "Passwords do NOT match!";
+        }
+      }
+    </script>
   </body>
 </html>

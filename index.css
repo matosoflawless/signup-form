@@ -7,9 +7,9 @@ body, html {
 
 body {
     display: flex;
-    overflow: hidden; 
+    
 }
-/* container total */
+/* all the container */
 .flex-container {
     height: 100vh;
     width: 100vw;
@@ -20,7 +20,7 @@ body {
 
 .image {
     width: 35vw; 
-    height: 100vh; 
+    height: 105vh; 
     object-fit: cover;
 
 }
@@ -59,9 +59,75 @@ body {
 
 
 .element2{
+    display: flex;
+   flex-direction: column;
+    font-size: 15px;
+    text-align: left;
+    
+    padding-left: 30px;
+    padding-top: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  
+ 
+}
 
-font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-font-size: 25px;
+.forms {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: white;
+    align-items: flex-start; /* Align columns to the top of the container */
+    
+}
+
+#formscolumn1,
+#formscolumn2 {
+    
+    display: flex;
+    flex-direction: column; /* Reverse the order of elements within each column */
+    flex-wrap: wrap;
+    width: 50%;
+    box-sizing: border-box;
+    align-items: center; /* Vertically center form elements within each column */
+    background-color: white;
+}
+
+
+.forms div {
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: white;
 
 }
+
+.element3{
+    display: flex;
+   flex-direction: column;
+    font-size: 15px;
+    text-align: left;
+    
+    padding-left: 30px;
+    padding-top: 40px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  
+}
+
+#createacc {
+  width: 200px;
+  height: 60px;
+  font-size: 20px;
+  background-color: #596D48;
+  color: white;
+  border-radius: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  translate: 20%;
+}
+
+#log-in-footer {
+    font-size: 15px;
+    padding-left: 15px;
+}
+
 
